@@ -14,6 +14,7 @@
   "EffectiveEchoSpacing": 0.0005,
   "FlipAngle": 7,
   "GradientSetType": "n/a",
+  "NonlinearGradientCorrection": false,
   "ImageOrientationPatientDICOM": [
     -0.0366102,
     0.99933,

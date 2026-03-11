@@ -29,6 +29,7 @@
     "ND",
     "NORM"
   ],
+  "NonlinearGradientCorrection": false,
   "InPlanePhaseEncodingDirectionDICOM": "ROW",
   "InstitutionAddress": "Street_StreetNo_Bei_Jing_District_CN_ZIP",
   "InstitutionName": "BeiJing_Normal_University",

@@ -1,4 +1,4 @@
-﻿name	type	units	low_cutoff	high_cutoff	description	sampling_frequency	status	status_description
+name	type	units	low_cutoff	high_cutoff	description	sampling_frequency	status	status_description
 SCLK01-177	MISC	n/a	0.0	600.0	Miscellaneous	1200.0	good	n/a
 BG1-4504	MEGREFMAG	T	0.0	600.0	Magnetometer Reference	1200.0	good	n/a
 BG2-4504	MEGREFMAG	T	0.0	600.0	Magnetometer Reference	1200.0	good	n/a
