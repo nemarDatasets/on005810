@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "enriched",
   "title": "NOD-MEG",
-  "description": "The Natural Object Dataset (NOD) integrates magnetoencephalography (MEG) and electroencephalography (EEG) data collected from human subjects viewing naturalistic object images from ImageNet. This multimodal neuroimaging resource complements previously collected fMRI data from the same subjects and stimuli, enabling investigation of neural mechanisms underlying object recognition with both high spatial and temporal resolution. The dataset encompasses diverse naturalistic stimuli and a broad subject pool, facilitating comparative analyses of neural activation patterns across stimuli and individuals.",
-  "methods_description": "MEG and EEG data were collected from subjects passively viewing naturalistic object images presented from the ImageNet database. Raw data are stored in BIDS format with multiple sessions and runs per subject. Preprocessing was performed using MNE software (version 1.7.1), with preprocessed time series and epoched data available in the derivatives directory.",
+  "description": "The Natural Object Dataset (NOD) integrates magnetoencephalography (MEG), electroencephalography (EEG), and functional magnetic resonance imaging (fMRI) data collected from the same subjects viewing naturalistic stimuli from ImageNet. This trimodal neuroimaging resource provides both high spatial resolution (fMRI) and high temporal resolution (MEG/EEG) for investigating object recognition mechanisms. The dataset encompasses diverse naturalistic stimuli and a broad subject pool, facilitating exploration of neural activation patterns across stimuli and subjects. The EEG component is available as a separate dataset (ds005811).",
+  "methods_description": "MEG and EEG data were collected from subjects viewing naturalistic stimuli (ImageNet images) in multiple sessions and runs, using the same stimulus set as the previously collected NOD-fMRI dataset (ds004496). Raw data were preprocessed and epoched using MNE software (version 1.7.1). Preprocessed full time series and epoch data are provided in BIDS-compliant format with comprehensive trial metadata including stimulus category information and subject responses. The MEG dataset (ds005810) and EEG dataset (ds005811) together form the temporal resolution component of the trimodal NOD resource.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -15,6 +15,16 @@
     "Zonglei Zhen": {}
   },
   "keywords": [
+    {
+      "term": "Magnetoencephalography",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D015225"
+    },
+    {
+      "term": "Electroencephalography",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D004569"
+    },
     {
       "term": "MEG"
     },
@@ -28,28 +38,21 @@
       "term": "naturalistic stimuli"
     },
     {
-      "term": "visual perception"
+      "term": "Visual Perception",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D014796"
     },
     {
       "term": "multimodal neuroimaging"
     },
     {
-      "term": "brain imaging"
-    },
-    {
-      "term": "ImageNet"
-    },
-    {
-      "term": "BIDS"
+      "term": "temporal dynamics"
     },
     {
       "term": "fMRI"
     },
     {
-      "term": "passive viewing"
-    },
-    {
-      "term": "visual object categorization"
+      "term": "ImageNet"
     }
   ],
   "related_identifiers": [
