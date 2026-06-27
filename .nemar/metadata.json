@@ -2,6 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "enriched",
   "title": "NOD-MEG",
+  "description": "The Natural Object Dataset (NOD) integrates magnetoencephalography (MEG) and electroencephalography (EEG) data collected from human subjects viewing naturalistic object images from ImageNet. This multimodal neuroimaging resource complements previously collected fMRI data from the same subjects and stimuli, enabling investigation of neural mechanisms underlying object recognition with both high spatial and temporal resolution. The dataset encompasses diverse naturalistic stimuli and a broad subject pool, facilitating comparative analyses of neural activation patterns across stimuli and individuals.",
+  "methods_description": "MEG and EEG data were collected from subjects passively viewing naturalistic object images presented from the ImageNet database. Raw data are stored in BIDS format with multiple sessions and runs per subject. Preprocessing was performed using MNE software (version 1.7.1), with preprocessed time series and epoched data available in the derivatives directory.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -12,12 +14,45 @@
     "Zheng Li": {},
     "Zonglei Zhen": {}
   },
-  "related_identifiers": [
+  "keywords": [
     {
-      "identifier": "10.18112/openneuro.ds005810.v2.0.0",
-      "identifier_type": "DOI",
-      "relation_type": "IsIdenticalTo"
+      "term": "MEG"
     },
+    {
+      "term": "EEG"
+    },
+    {
+      "term": "object recognition"
+    },
+    {
+      "term": "naturalistic stimuli"
+    },
+    {
+      "term": "visual perception"
+    },
+    {
+      "term": "multimodal neuroimaging"
+    },
+    {
+      "term": "brain imaging"
+    },
+    {
+      "term": "ImageNet"
+    },
+    {
+      "term": "BIDS"
+    },
+    {
+      "term": "fMRI"
+    },
+    {
+      "term": "passive viewing"
+    },
+    {
+      "term": "visual object categorization"
+    }
+  ],
+  "related_identifiers": [
     {
       "identifier": "10.18112/openneuro.ds004496.v1.2.2",
       "identifier_type": "DOI",
@@ -42,6 +77,16 @@
       "identifier": "10.1038/sdata.2018.110",
       "identifier_type": "DOI",
       "relation_type": "References"
+    },
+    {
+      "identifier": "10.18112/openneuro.ds005810.v2.0.0",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
+    },
+    {
+      "identifier": "10.18112/openneuro.ds005811.v1.0.0",
+      "identifier_type": "DOI",
+      "relation_type": "IsPartOf"
     }
   ],
   "funding_references": [
@@ -65,7 +110,7 @@
   ],
   "resource_type_general": "Dataset",
   "sizes": [
-    "0.0 KB (1 files)"
+    "231.0 GB (80951 files)"
   ],
   "formats": [
     ".JPEG",
@@ -73,40 +118,8 @@
     ".fif",
     ".json",
     ".md",
-    ".tsv"
+    ".tsv",
+    ".yml"
   ],
-  "description": "The Natural Object Dataset-MEG (NOD-MEG) provides magnetoencephalography data collected from subjects viewing naturalistic stimuli from ImageNet. This dataset is part of the larger Natural Object Dataset (NOD) that integrates MEG, EEG (ds005811), and fMRI (ds004496) data from the same subjects, enabling investigation of neural mechanisms underlying object recognition with high temporal resolution. The MEG component complements the fMRI data's high spatial resolution, facilitating exploration of neural activation patterns across both stimuli and individual differences.",
-  "methods_description": "MEG data were collected from subjects viewing naturalistic stimuli images from ImageNet. Raw MEG data are stored in BIDS format with multiple sessions per subject. Preprocessing was performed using MNE (version 1.7.1), with preprocessed full time series and epoched data available in derivatives directories.",
-  "keywords": [
-    {
-      "term": "MEG"
-    },
-    {
-      "term": "object recognition"
-    },
-    {
-      "term": "naturalistic stimuli"
-    },
-    {
-      "term": "Visual Perception",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D014796"
-    },
-    {
-      "term": "multimodal neuroimaging"
-    },
-    {
-      "term": "neural representation"
-    },
-    {
-      "term": "ImageNet"
-    },
-    {
-      "term": "BIDS"
-    },
-    {
-      "term": "fMRI"
-    }
-  ],
-  "source_hash": "839aed46d2f6b5fc1bedffa2e7eafb607e892b7ddcdeea95e87c232ccaadadd0"
+  "source_hash": "5a916e5f3f9bfb0bd6163a4615b8abc3a46a8deea4b0d94bfa3e5ee02032311a"
 }
