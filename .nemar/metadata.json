@@ -1,9 +1,9 @@
 {
   "version": "2.0",
-  "pipeline_stage": "enriched",
+  "pipeline_stage": "validated",
   "title": "NOD-MEG",
-  "description": "The Natural Object Dataset (NOD) integrates magnetoencephalography (MEG) and electroencephalography (EEG) data collected from subjects viewing naturalistic stimuli consisting of diverse object images from ImageNet. This multimodal neuroimaging resource complements previously collected fMRI data from the same subjects and stimuli, enabling investigation of neural mechanisms underlying object recognition with both high spatial and temporal resolution across three complementary imaging modalities.",
-  "methods_description": "MEG and EEG data were collected from subjects passively viewing naturalistic object images from ImageNet. Raw data are provided in BIDS format with preprocessing performed using MNE (version 1.7.1). Preprocessed data and epoch data are available in derivatives directories. Trial-level metadata including stimulus category information and subject responses are documented in detailed events files.",
+  "description": "NOD-MEG provides magnetoencephalography (MEG) recordings from human participants viewing large-scale naturalistic ImageNet stimuli, extending the previously collected Natural Object Dataset (NOD-fMRI) with temporally resolved neural data. Combined with corresponding fMRI and EEG datasets from the same subjects, NOD-MEG enables multimodal investigation of object recognition across both spatial and temporal domains. The dataset is intended as a resource for studying neural mechanisms of visual object recognition under naturalistic viewing conditions.",
+  "methods_description": "MEG data were collected from subjects viewing naturalistic ImageNet stimulus images, using the same stimulus set as the companion fMRI and EEG datasets. Raw MEG data are organized in BIDS format, with preprocessing performed using MNE-Python (v1.7.1) to generate cleaned continuous data and epoched trial data, accompanied by detailed event metadata for each trial.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -16,10 +16,9 @@
   },
   "keywords": [
     {
-      "term": "MEG"
-    },
-    {
-      "term": "EEG"
+      "term": "Magnetoencephalography",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D015225"
     },
     {
       "term": "object recognition"
@@ -28,16 +27,13 @@
       "term": "naturalistic stimuli"
     },
     {
-      "term": "visual perception"
-    },
-    {
-      "term": "multimodal neuroimaging"
-    },
-    {
-      "term": "brain imaging"
+      "term": "visual cognition"
     },
     {
       "term": "ImageNet"
+    },
+    {
+      "term": "multimodal neuroimaging"
     }
   ],
   "related_identifiers": [
@@ -91,9 +87,8 @@
       "award_number": "31771251"
     },
     {
-      "funder_name": "Ministry of Science and Technology of China",
-      "award_number": "2021ZD0200407",
-      "award_title": "STI 2030-Major Projects"
+      "funder_name": "STI 2030-Major Projects of the Ministry of Science and Technology of China",
+      "award_number": "2021ZD0200407"
     }
   ],
   "resource_type_general": "Dataset",
